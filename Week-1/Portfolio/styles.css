@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(122, 129, 130);
+}
+.headings{
+    font-family: "Quantico", sans-serif;
+    color: rgb(43, 45, 45);
+}
+#div1{
+    width:60%;
+    height: auto;
+    background-color: rgb(43, 45, 45);
+    position: absolute;
+    top:0%;
+    left:20%;
+    text-align: center;
+    color:  rgb(122, 129, 130);
+    font-family: "Share Tech Mono", monospace;
+    border-radius: 0px 0px 10px 10px;
+}
+#div1 p{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#name{
+    text-align: left;
+    color: rgb(43, 45, 45);
+    margin-top: 80px;
+    margin-left: 15%;
+    font-size: 40px;
+}
+#info{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-family: 'Bitter', serif;
+    color: rgb(43, 45, 45);
+}
+hr{
+    margin-top: 40px;
+    width:90%;
+    color:rgb(43, 45, 45);
+}
+#Adv{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.point{
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.sub-point{
+    margin-top: 2px;
+    font-size: 14px;
+}
+li{
+    width: 45%;
+    height: 80px;
+    background-color: rgb(103, 105, 105);
+    background-color: rgb(87, 95, 95);
+    color: rgb(32, 33, 33);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Bitter', serif;
+}
+.l{
+    float: left;
+    margin: 20px 5%;
+    text-align: left;
+}
+.r{
+    float: right;
+    margin: 20px 5%;
+    text-align: right;
+}
