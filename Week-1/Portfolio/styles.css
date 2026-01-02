@@ -1,5 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(122, 129, 130);
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
 }
 .headings{
     font-family: "Quantico", sans-serif;
@@ -98,6 +106,31 @@ ul{
     top: 712px;
     left: 51%;
 }
+.skill-list, .nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.nav-menu{
+    gap: 35px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: rgb(87, 95, 95);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.nav-menu li a:hover{
+    color: rgb(43, 45, 45);
+    font-weight: bold;
+    background-color:rgb(87, 95, 95) ;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
 .skill{
     width: 15%;
     height: auto;
@@ -110,5 +143,133 @@ ul{
     margin: 10px;
     font-family: 'Bitter', serif;
     color: rgb(43, 45, 45);
-
+}
+.top img{
+    width: 40px;
+    height: auto;
+}
+.top{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    transition: opacity 0.4s ease;
+    opacity:0;
+    pointer-events: none;
+}
+.top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+footer{
+    text-align: center;
+    background-color: rgb(43, 45, 45);
+    width: 60%;
+    margin:0%;
+    margin-left:20%;
+    color:  rgb(122, 129, 130);
+    font-family: "Share Tech Mono", monospace;
+    border-radius: 10px 10px 0px 0px;
+}
+form{
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Bitter', serif;
+    color: rgb(43, 45, 45);
+}
+input{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(122, 129, 130);
+    border: 2px solid rgb(43, 45, 45);
+    color: rgb(43, 45, 45);
+    font-family: 'Bitter', serif;
+}
+input::placeholder{
+    color: rgb(43, 45, 45);
+}
+textarea{
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(122, 129, 130);
+    border: 2px solid rgb(43, 45, 45);
+    color: rgb(43, 45, 45);
+    font-family: 'Bitter', serif;
+}
+textarea::placeholder{
+    color: rgb(43, 45, 45);
+}
+button{
+    background-color: rgb(43, 45, 45);
+    color: rgb(122, 129, 130);
+    padding: 10px 20px;
+    border: 2px solid rgb(122, 129, 130);
+    border-radius: 5px;
+    font-family: 'Bitter', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: rgb(122, 129, 130);
+    color:rgb(43, 45, 45);
+    border: 2px solid rgb(43, 45, 45);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.modal{
+    background-color: rgba(122, 129, 130,0.5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal.open{
+    opacity: 1;
+    pointer-events: auto;
+}
+.popup{
+    background-color: rgb(43, 45, 45);
+    color: rgb(122, 129, 130);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Bitter', serif;
+}
+.social-icon{
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+#socials{
+    /* display: flex; */
+    position: absolute;
+    top:210%;
+    left: 60%;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Bitter', serif;
+    color: rgb(43, 45, 45);
+}
+#socials a{
+    text-decoration: none;
+    color: rgb(43, 45, 45);
+    font-size: 18px;
+    margin-right: 20px;
+    transform: all 0.5s ease;
+}
+#socials a:hover{
+    text-decoration: underline;
 }

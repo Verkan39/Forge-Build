@@ -11,9 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="div1"><p>Hello!</p></div>
+    <main>
+    <nav id="navbar">
+    <div id="div1">
+        <p>Hello!</p>
+        <ul class="nav-menu">
+            <li><a href="#navbar">About Me</a></li>
+            <li><a href="#Adv">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+    </nav>
+    <a href="#" class="top">
+        <img src="top.png">
+    </a>
     <h1 id="name" class="headings">Vedanshu Meharia</h1>
     <div id="info"><p>Hello, thanks you checked my profile. I am Vedanshu Meharia, raised in West Bengal, India. I have completed my higher secondary education from M. C. Kejriwal Vidyapeeth. 
     Currently, I am pursuing my Bachelor's degree in Mathematics and Computing from the Indian Institute of Technology, Roorkee. My interests include development, and competitive programming. In my free time, I enjoy swimming and having fun.
@@ -64,19 +79,37 @@
     <hr>
     <div>
         <h1 id="contact" class="headings">Let's get in touch :</h1>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name"><br>
-            <label for="EmailID">E-mail ID:</label>
-            <input type="email" id="EmailID" placeholder="Your Email"><br>
-            <label for="message">Leave a message:</label>
-            <textarea id="message" placeholder="Your Message"></textarea><br>
+        <form id="contactForm" action="https://formspree.io/f/xaqnorky" method="POST">
+            <label for="namef">Name:</label><br>
+            <input type="text" name="name" id="namef" placeholder="Your Name" required><br>
+            <label for="EmailID">E-mail ID:</label><br>
+            <input type="email" name="email" id="EmailID" placeholder="Your Email" required><br>
+            <label for="message">Leave a message:</label><br>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea><br>
             <button type="submit">Send!</button>
-        </form>
+            </form>
+        <div class="modal">
+            <div class="popup">
+                <h2>Thanks! I recieved your message.</h2>
+                <span class="popuptext" id="myPopup">Will catch-up soon!</span><br>
+                <button type="button" id="backtohome"> :D !</button>
+            </div>
+            </div>
+        <div id="socials">
+            <div><img src="linkedinlogo.png" class="social-icon">
+            <a href="https://www.linkedin.com/in/vedanshu-meharia/" target="_blank">linkedin.com/Vedanshu Meharia
+            </a></div>
+            <br>
+            <div>
+            <img src="githublogo.png" class="social-icon">
+            <a href="https://github.com/Verkan39" target="_blank">github.com/verkan39
+            </a>
+            </div>
+        </div>
     </div>
-    <!-- <div>
-        <h1>Check me out :</h1>      <a href="https://www.linkedin.com/in/vedanshu-meharia"><img src="linkedin.png" alt="LinkedIn Logo" width="30" height="30"></a>
-        <a href="https://github.com/Verkan39"><img src="github.png" alt="GitHub Logo" width="30" height="30"></a>
-    </div> -->
+    </main>
+    <footer>
+        <p>Thanks!</p>
+    </footer>
 </body>
 </html>
