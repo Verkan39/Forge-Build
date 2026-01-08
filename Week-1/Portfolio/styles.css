@@ -220,7 +220,7 @@ button:hover{
     border: 2px solid rgb(43, 45, 45);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
-.modal{
+/* .modal{
     background-color: rgba(122, 129, 130,0.5);
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -237,15 +237,15 @@ button:hover{
 .modal.open{
     opacity: 1;
     pointer-events: auto;
-}
-.popup{
+} */
+/* .popup{
     background-color: rgb(43, 45, 45);
     color: rgb(122, 129, 130);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     font-family: 'Bitter', serif;
-}
+} */
 .social-icon{
     width: 30px;
     height: auto;

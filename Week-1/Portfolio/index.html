@@ -12,6 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "b2FtN3-oLRHDOZy6v",
+        });
+    })();
+    </script>
 </head>
 <body>
     <main>
@@ -86,15 +96,15 @@
             <input type="email" name="email" id="EmailID" placeholder="Your Email" required><br>
             <label for="message">Leave a message:</label><br>
             <textarea id="message" name="message" placeholder="Your Message"></textarea><br>
-            <button type="submit">Send!</button>
+            <button type="submit" onclick="sendMail()">Send!</button>
             </form>
-        <div class="modal">
+        <!-- <div class="modal">
             <div class="popup">
                 <h2>Thanks! I recieved your message.</h2>
                 <span class="popuptext" id="myPopup">Will catch-up soon!</span><br>
                 <button type="button" id="backtohome"> :D !</button>
             </div>
-            </div>
+            </div> -->
         <div id="socials">
             <div><img src="linkedinlogo.png" class="social-icon">
             <a href="https://www.linkedin.com/in/vedanshu-meharia/" target="_blank">linkedin.com/Vedanshu Meharia
