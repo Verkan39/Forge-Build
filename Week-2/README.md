@@ -64,3 +64,13 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+## Contract Address:
+for the deployed Ledger contract, the contract address is "0xe277ee27278469a1c1bfc7a21624aabfc4302138"
+
+## Deployment Steps:
+created an API key using Alchemy,on Etherium Sepholia network
+added my private key to the ".env" and ensured that .env is listed on gitignore
+added the rpc to founry.toml
+wrote a deployement script
+ran the foundry command with my private key to deploy it to Sepholia

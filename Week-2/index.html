@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic DApp</title>
+</head>
+<body>
+    <h1>Welcome !</h1>
+    <hr>
+    <h2> Connect Wallet </h2>
+    <button id="connectWall"> Connect Wallet</button>
+    <p id="account"></p>
+    <hr>
+    <h2>Read Values (Get Balance)</h2>
+    <button id="getBal">Check Balance</button>
+    <p id="balance"></p>
+    <hr>
+    <h2>Let's try deposits</h2>
+    <input type="number" id="depositAmount" placeholder="Enter amount to deposit">
+    <button id="depositBtn">Deposit</button>
+    <p id="txnstatus"></p>
+    </p>
+    <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -3,18 +3,18 @@
 pragma solidity ^0.8.18;
 
 contract Ledger{
-    uint256 public balance;
     event Deposit(
         address user,
         uint256 amount
     );
 
-    function setBalance(uint256 _balance) public{
-        balance = _balance;
+    function getBalance() external view returns(uint256){
+        return address(this).balance;
     }
 
-    function deposit(address _user, uint256 _amount) public{
-        emit Deposit(_user, _amount);
-        balance += _amount;
+    function deposit() external payable {
+    require(msg.value > 0, "No ETH sent");
+
+    emit Deposit(msg.sender, msg.value);
     }
 }
